@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    max-height: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #a5a5a5;
+}
+
+.pic img{
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.pic{
+    /* width: 50%; */
+    margin-right: 20px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    /* outline: 2px solid red; */
+    margin: 5% auto 5% auto;
+    padding: 20px;
+    display: flex;
+}
+
+.text{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.text h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 28px;
+    color: rgba(255, 0, 0, 0.4);
+    line-height: 35px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-bottom: 25px;
+}
+
+.text p{
+    margin-bottom: 25px;
+}
+
+.text .price{
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-size: 32px;
+    font-weight: bold;
+    color: #5a5a5a;
+    line-height: 35px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    margin-bottom: 25px;
+}
+
+.text a{
+    display: block;
+    background-color: rgb(116, 116, 116);
+    text-align: center;
+    width: 250px;
+    padding: 10px 0 10px 0;
+    border: 2px solid #954164;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.circl{
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/pomodor_big.jpg");
+    opacity: .5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    bottom: -125px;
+    right: -100px;
+    z-index: -1;
+}
+
+.text a:hover{
+   
+    background-color: #fff;
+   
+    border: 2px solid #954164;
+    border-radius: 5px;
+    
+    
+    color: rgb(116, 116, 116);
+}
+
+@media (max-width: 767px) {
+    .wrapper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text{
+        /* display: flex;
+        justify-content: center;
+        flex-wrap: wrap; */
+        text-align: left;
+    }
+    .text a{
+        width: 100%;
+    }
+    .circl{
+        display: none;
+    }
+}
